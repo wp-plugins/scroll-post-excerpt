@@ -1,6 +1,7 @@
 /**
  *     Scroll post excerpt
- *     Copyright (C) 2012  www.gopiplus.com
+ *     Copyright (C) 2011 - 2013 www.gopiplus.com
+ *     http://www.gopiplus.com/work/2011/09/13/vertical-scroll-post-excerpt-wordpress-plugin/
  * 
  *     This program is free software: you can redistribute it and/or modify
  *     it under the terms of the GNU General Public License as published by
@@ -15,8 +16,6 @@
  *     You should have received a copy of the GNU General Public License
  *     along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-
-	
 
 function spe_scroll() {
 	spe_obj.scrollTop = spe_obj.scrollTop + 1;
@@ -68,4 +67,3 @@ function spe_content() {
 	// start scrolling
 	setTimeout("spe_scroll();", 2000);
 }
-

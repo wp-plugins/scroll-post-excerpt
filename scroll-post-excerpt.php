@@ -4,10 +4,12 @@
 Plugin Name: Scroll post excerpt
 Description: Scroll post excerpt WordPress plugin create the information reel in the website, this scroller contain the post title and post excerpt. it is scroll like reel.
 Author: Gopi.R
-Version: 5.0
+Version: 5.1
 Plugin URI: http://www.gopiplus.com/work/2011/09/13/vertical-scroll-post-excerpt-wordpress-plugin/
 Author URI: http://www.gopiplus.com/work/2011/09/13/vertical-scroll-post-excerpt-wordpress-plugin/
 Donate link: http://www.gopiplus.com/work/2011/09/13/vertical-scroll-post-excerpt-wordpress-plugin/
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 
 global $wpdb, $wp_version;
@@ -221,7 +223,6 @@ function spe_admin_options()
 	echo $spe_excerpt_length . '" name="spe_excerpt_length" id="spe_excerpt_length" />';
 	echo ' (Only Number, Example: 200)</p>';
 
-
 	echo '<input name="spe_submit" id="spe_submit" lang="publish" class="button-primary" value="Update Setting" type="Submit" />';
 	
 	echo '</br></br>';
@@ -233,7 +234,6 @@ function spe_admin_options()
 	</form>
     <?php
 }
-
 
 function spe_add_to_menu() 
 {
@@ -260,8 +260,7 @@ function spe_init()
 
 function spe_deactivation() 
 {
-
-
+	// No action required.
 }
 
 function spe_add_javascript_files() 

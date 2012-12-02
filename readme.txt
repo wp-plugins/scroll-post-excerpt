@@ -5,8 +5,10 @@ Author URI: http://www.gopiplus.com/work/2011/09/13/vertical-scroll-post-excerpt
 Plugin URI: http://www.gopiplus.com/work/2011/09/13/vertical-scroll-post-excerpt-wordpress-plugin/
 Tags: scroll, post, excerpt
 Requires at least: 3.0
-Tested up to: 3.4.1
-Stable tag: 5.0
+Tested up to: 3.5
+Stable tag: 5.1
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	
 Scroll post excerpt WordPress plugin create the information reel in the website, this scroller contain the post title and post excerpt.
 
@@ -72,10 +74,9 @@ Q3. Why only few characters display in scroll excerpt?
 
 First version.			
 
-
 = 2.0 =				
 
-Tested upto 3.3	
+Tested up to 3.3	
 
 = 3.0 =
 
@@ -83,11 +84,15 @@ Reset Query issue has been fixed.
 
 = 4.0 =
 
-Tested upto 3.4
+Tested up to 3.4
 
 = 5.0 =
 
 New demo link, www.gopiplus.com
+
+= 5.1 =
+
+Tested up to 3.5
 
 == Upgrade Notice ==
 
@@ -95,10 +100,9 @@ New demo link, www.gopiplus.com
 
 First version.			
 
-
 = 2.0 =				
 
-Tested upto 3.3	
+Tested up to 3.3	
 
 = 3.0 =
 
@@ -106,8 +110,12 @@ Reset Query issue has been fixed.
 
 = 4.0 =
 
-Tested upto 3.4
+Tested up to 3.4
 
 = 5.0 =
 
-New demo link, www.gopiplus.com
+New demo link, http://www.gopiplus.com
+
+= 5.1 =
+
+Tested up to 3.5
