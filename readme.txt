@@ -4,9 +4,9 @@ Donate link: http://www.gopiplus.com/work/2011/09/13/vertical-scroll-post-excerp
 Author URI: http://www.gopiplus.com/work/2011/09/13/vertical-scroll-post-excerpt-wordpress-plugin/
 Plugin URI: http://www.gopiplus.com/work/2011/09/13/vertical-scroll-post-excerpt-wordpress-plugin/
 Tags: scroll, post, excerpt
-Requires at least: 3.0
-Tested up to: 3.5
-Stable tag: 5.1
+Requires at least: 3.2
+Tested up to: 3.6
+Stable tag: 6.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	
@@ -94,6 +94,11 @@ New demo link, www.gopiplus.com
 
 Tested up to 3.5
 
+= 6.0 =
+
+Tested up to 3.6
+Added few security features.
+
 == Upgrade Notice ==
 
 = 1.0 =				
@@ -119,3 +124,8 @@ New demo link, http://www.gopiplus.com
 = 5.1 =
 
 Tested up to 3.5
+
+= 6.0 =
+
+Tested up to 3.6
+Added few security features.

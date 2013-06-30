@@ -4,7 +4,7 @@
 Plugin Name: Scroll post excerpt
 Description: Scroll post excerpt WordPress plugin create the information reel in the website, this scroller contain the post title and post excerpt. it is scroll like reel.
 Author: Gopi.R
-Version: 5.1
+Version: 6.0
 Plugin URI: http://www.gopiplus.com/work/2011/09/13/vertical-scroll-post-excerpt-wordpress-plugin/
 Author URI: http://www.gopiplus.com/work/2011/09/13/vertical-scroll-post-excerpt-wordpress-plugin/
 Donate link: http://www.gopiplus.com/work/2011/09/13/vertical-scroll-post-excerpt-wordpress-plugin/
@@ -154,85 +154,7 @@ function spe_widget($args)
 
 function spe_admin_options() 
 {
-	global $wpdb;
-
-	echo '<div class="wrap">';
-    echo '<h2>Vertical scroll recent post</h2>';
-    echo '</div>';
-
-	$spe_title = get_option('spe_title');
-	$spe_select_num_user = get_option('spe_select_num_user');
-	$spe_dis_num_user = get_option('spe_dis_num_user');
-	$spe_dis_num_height = get_option('spe_dis_num_height');
-	$spe_select_categories = get_option('spe_select_categories');
-	$spe_select_orderby = get_option('spe_select_orderby');
-	$spe_select_order = get_option('spe_select_order');
-	$spe_excerpt_length = get_option('spe_excerpt_length');
-	
-	if (@$_POST['spe_submit']) 
-	{
-		$spe_title = stripslashes($_POST['spe_title']);
-		$spe_select_num_user = stripslashes($_POST['spe_select_num_user']);
-		$spe_dis_num_user = stripslashes($_POST['spe_dis_num_user']);
-		$spe_dis_num_height = stripslashes($_POST['spe_dis_num_height']);
-		$spe_select_categories = stripslashes($_POST['spe_select_categories']);
-		$spe_select_orderby = stripslashes($_POST['spe_select_orderby']);
-		$spe_select_order = stripslashes($_POST['spe_select_order']);
-		$spe_excerpt_length = stripslashes($_POST['spe_excerpt_length']);
-		
-		update_option('spe_title', $spe_title );
-		update_option('spe_select_num_user', $spe_select_num_user );
-		update_option('spe_dis_num_user', $spe_dis_num_user );
-		update_option('spe_dis_num_height', $spe_dis_num_height );
-		update_option('spe_select_categories', $spe_select_categories );
-		update_option('spe_select_orderby', $spe_select_orderby );
-		update_option('spe_select_order', $spe_select_order );
-		update_option('spe_excerpt_length', $spe_excerpt_length );
-	}
-	
-	?>
-	<form name="spe_form" method="post" action="">
-	<table width="100%" border="0" cellspacing="0" cellpadding="3"><tr><td width="80%" align="left">
-	<?php
-	echo '<p>Title:<br><input  style="width: 200px;" type="text" value="';
-	echo $spe_title . '" name="spe_title" id="spe_title" /></p>';
-	
-	echo '<p>Each content height in scroll:<br><input  style="width: 100px;" type="text" value="';
-	echo $spe_dis_num_height . '" name="spe_dis_num_height" id="spe_dis_num_height" /> (Only Number)<br>';
-	echo 'If any overlap in the reel at front end, you should arrange(increase/decrease) the above height</p>';
-	
-	echo '<p>Display number of post at the same time in scroll:<br><input  style="width: 100px;" type="text" value="';
-	echo $spe_dis_num_user . '" name="spe_dis_num_user" id="spe_dis_num_user" /></p>';
-	
-	echo '<p>Enter max number of post to scroll:<br><input  style="width: 100px;" type="text" value="';
-	echo $spe_select_num_user . '" name="spe_select_num_user" id="spe_select_num_user" /></p>';
-	
-	echo '<p>Enter Categories:<br><input  style="width: 200px;" type="text" value="';
-	echo $spe_select_categories . '" name="spe_select_categories" id="spe_select_categories" /> (Example: 1, 3, 4)<br>';
-	echo 'Category IDs, separated by commas.</p>';
-	
-	echo '<p>Enter Orderbys:<br><input  style="width: 200px;" type="text" value="';
-	echo $spe_select_orderby . '" name="spe_select_orderby" id="spe_select_orderby" /> (Any 1 from list)<br>';
-	echo ' ID/author/title/rand/date/category/modified</p>';
-
-	echo '<p>Enter order:<br><input  style="width: 100px;" type="text" value="';
-	echo $spe_select_order . '" name="spe_select_order" id="spe_select_order" />';
-	echo ' ASC/DESC </p>';
-
-	echo '<p>Excerpt Length:<br><input  style="width: 100px;" type="text" value="';
-	echo $spe_excerpt_length . '" name="spe_excerpt_length" id="spe_excerpt_length" />';
-	echo ' (Only Number, Example: 200)</p>';
-
-	echo '<input name="spe_submit" id="spe_submit" lang="publish" class="button-primary" value="Update Setting" type="Submit" />';
-	
-	echo '</br></br>';
-	?>
-	</td>
-	<td width="20%" align="left" valign="middle" style="">
-
-	</td></tr></table>
-	</form>
-    <?php
+	include('scroll-post-setting.php');
 }
 
 function spe_add_to_menu() 
