@@ -1,10 +1,9 @@
 <?php
-
 /*
 Plugin Name: Scroll post excerpt
 Description: Scroll post excerpt WordPress plugin create the information reel in the website, this scroller contain the post title and post excerpt. it is scroll like reel.
 Author: Gopi.R
-Version: 6.0
+Version: 6.1
 Plugin URI: http://www.gopiplus.com/work/2011/09/13/vertical-scroll-post-excerpt-wordpress-plugin/
 Author URI: http://www.gopiplus.com/work/2011/09/13/vertical-scroll-post-excerpt-wordpress-plugin/
 Donate link: http://www.gopiplus.com/work/2011/09/13/vertical-scroll-post-excerpt-wordpress-plugin/
@@ -21,7 +20,6 @@ function spe_show()
 	$spe_x = "";
 	$num_user = get_option('spe_select_num_user');
 	$dis_num_user = get_option('spe_dis_num_user');
-
 	$dis_num_height = get_option('spe_dis_num_height');
 	$spe_select_categories = get_option('spe_select_categories');
 	$spe_select_orderby = get_option('spe_select_orderby');
@@ -93,14 +91,14 @@ function spe_show()
 		var spe_obj	= '';
 		var spe_scrollPos 	= '';
 		var spe_numScrolls	= '';
-		var spe_heightOfElm = '<?php echo $dis_num_height; ?>'; // Height of each element (px)
+		var spe_heightOfElm = '<?php echo $dis_num_height; ?>';
 		var spe_numberOfElm = '<?php echo $spe_count; ?>';
 		var spe_scrollOn 	= 'true';
 		function spe_createscroll() 
 		{
 			<?php echo $spe_x; ?>
 			spe_obj	= document.getElementById('spe_Holder');
-			spe_obj.style.height = (spe_numberOfElm * spe_heightOfElm) + 'px'; // Set height of DIV
+			spe_obj.style.height = (spe_numberOfElm * spe_heightOfElm) + 'px';
 			spe_content();
 		}
 		</script>
@@ -116,9 +114,11 @@ function spe_show()
 	wp_reset_query();
 }
 
-function spe_dp_clean($excerpt, $substr=0) {
+function spe_dp_clean($excerpt, $substr=0) 
+{
 	$string = strip_tags(str_replace('[...]', '...', $excerpt));
-	if ($substr>0) {
+	if ($substr>0) 
+	{
 		$string = substr($string, 0, $substr);
 	}
 	return $string;
@@ -138,8 +138,11 @@ function spe_install()
 
 function spe_control() 
 {
-	echo 'Scroll post excerpt<br><br>';
-	echo 'Check official website for live demo and more information  <a target="_blank" href="http://www.gopiplus.com/work/2011/09/13/vertical-scroll-post-excerpt-wordpress-plugin/">click here</a>';
+	echo '<p><b>';
+	_e('Scroll post excerpt', 'scroll-post-excerpt');
+	echo '.</b> ';
+	_e('Check official website for more information', 'scroll-post-excerpt');
+	?> <a target="_blank" href="http://www.gopiplus.com/work/2011/09/13/vertical-scroll-post-excerpt-wordpress-plugin/"><?php _e('click here', 'scroll-post-excerpt'); ?></a></p><?php
 }
 
 function spe_widget($args) 
@@ -159,7 +162,7 @@ function spe_admin_options()
 
 function spe_add_to_menu() 
 {
-	add_options_page('Scroll post excerpt', 'Scroll post excerpt', 'manage_options', __FILE__, 'spe_admin_options' );
+	add_options_page(__('Scroll post excerpt', 'scroll-post-excerpt'), __('Scroll post excerpt', 'scroll-post-excerpt'), 'manage_options', __FILE__, 'spe_admin_options' );
 }
 
 if (is_admin()) 
@@ -171,12 +174,12 @@ function spe_init()
 {
 	if(function_exists('wp_register_sidebar_widget')) 
 	{
-		wp_register_sidebar_widget('Scroll post excerpt', 'Scroll post excerpt', 'spe_widget');
+		wp_register_sidebar_widget( 'scroll-post-excerpt', __('Scroll post excerpt', 'scroll-post-excerpt'), 'spe_widget');
 	}
 	
 	if(function_exists('wp_register_widget_control')) 
 	{
-		wp_register_widget_control('Scroll post excerpt', array('Scroll post excerpt', 'widgets'), 'spe_control');
+		wp_register_widget_control('scroll-post-excerpt', array( __('Scroll post excerpt', 'scroll-post-excerpt'), 'widgets'), 'spe_control');
 	} 
 }
 
@@ -193,6 +196,12 @@ function spe_add_javascript_files()
 	}
 }
 
+function spe_textdomain() 
+{
+	  load_plugin_textdomain( 'scroll-post-excerpt', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
+}
+
+add_action('plugins_loaded', 'spe_textdomain');
 add_action('init', 'spe_add_javascript_files');
 add_action("plugins_loaded", "spe_init");
 register_activation_hook(__FILE__, 'spe_install');

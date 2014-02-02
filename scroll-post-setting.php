@@ -2,7 +2,7 @@
   <div class="form-wrap">
     <div id="icon-edit" class="icon32 icon32-posts-post"><br>
     </div>
-    <h2>Scroll post excerpt</h2>
+    <h2><?php _e('Scroll post excerpt', 'scroll-post-excerpt'); ?></h2>
     <?php
 	$spe_title = get_option('spe_title');
 	$spe_select_num_user = get_option('spe_select_num_user');
@@ -38,35 +38,35 @@
 		
 		?>
 		<div class="updated fade">
-			<p><strong>Details successfully updated.</strong></p>
+			<p><strong><?php _e('Details successfully updated.', 'scroll-post-excerpt'); ?></strong></p>
 		</div>
 		<?php
 	}
 	?>
-	<h3>Scroll setting</h3>
+	<h3><?php _e('Scroll Setting', 'scroll-post-excerpt'); ?></h3>
 	<form name="spe_form" method="post" action="">
 	
-		<label for="tag-title">Widget title</label>
+		<label for="tag-title"><?php _e('Widget title', 'scroll-post-excerpt'); ?></label>
 		<input name="spe_title" type="text" id="spe_title" value="<?php echo $spe_title; ?>" size="50" />
-		<p>Enter widget title</p>
+		<p><?php _e('Enter widget title', 'scroll-post-excerpt'); ?></p>
 			
-		<label for="tag-image">Enter height of each post</label>
+		<label for="tag-image"><?php _e('Enter height of each post', 'scroll-post-excerpt'); ?></label>
 		<input name="spe_dis_num_height" type="text" id="spe_dis_num_height" value="<?php echo $spe_dis_num_height; ?>" maxlength="3" />
-		<p>If any overlap in the reel at front end, you should arrange (increase/decrease) this height. (Only number)</p>
+		<p><?php _e('If any overlap in the reel at front end, you should arrange (increase/decrease) this height. (Only number)', 'scroll-post-excerpt'); ?> (Example: 80)</p>
 		
-		<label for="tag-image">Display number of post</label>
+		<label for="tag-image"><?php _e('Display number of post', 'scroll-post-excerpt'); ?></label>
 		<input name="spe_dis_num_user" type="text" id="spe_dis_num_user" value="<?php echo $spe_dis_num_user; ?>" maxlength="2" />
-		<p>Enter number of post at the same time in scroll to display. (Only number)</p>
+		<p><?php _e('Enter number of post at the same time in scroll to display. (Only number)', 'scroll-post-excerpt'); ?> (Example: 5)</p>
 		
-		<label for="tag-image">Enter max number of post to scroll</label>
+		<label for="tag-image"><?php _e('Enter max number of post to scroll', 'scroll-post-excerpt'); ?></label>
 		<input name="spe_select_num_user" type="text" id="spe_select_num_user" value="<?php echo $spe_select_num_user; ?>" maxlength="2" />
-		<p>Enter max number of post to scroll. (Only number)</p>
+		<p><?php _e('Enter max number of post to scroll. (Only number)', 'scroll-post-excerpt'); ?> (Example: 10)</p>
 		
-		<label for="tag-image">Enter categories</label>
+		<label for="tag-image"><?php _e('Enter categories', 'scroll-post-excerpt'); ?></label>
 		<input name="spe_select_categories" type="text" id="spe_select_categories" value="<?php echo $spe_select_categories; ?>" maxlength="100" />
-		<p>Category IDs, separated by commas.</p>
+		<p><?php _e('Category IDs, separated by commas.', 'scroll-post-excerpt'); ?></p>
 		
-		<label for="tag-image">Select orderbys</label>
+		<label for="tag-image"><?php _e('Select orderbys', 'scroll-post-excerpt'); ?></label>
 		<select name="spe_select_orderby" id="spe_select_orderby">
 			<option value='ID' <?php if($spe_select_orderby == 'ID') { echo 'selected' ; } ?>>ID</option>
 			<option value='author' <?php if($spe_select_orderby == 'author') { echo 'selected' ; } ?>>Author</option>
@@ -76,18 +76,18 @@
 			<option value='date' <?php if($spe_select_orderby == 'date') { echo 'selected' ; } ?>>Date</option>
 			<option value='modified' <?php if($spe_select_orderby == 'modified') { echo 'selected' ; } ?>>Modified</option>
 		</select>
-		<p>Select orderbys from the list</p>
+		<p><?php _e('Select orderbys from the list', 'scroll-post-excerpt'); ?></p>
 		
-		<label for="tag-image">Select order</label>
+		<label for="tag-image"><?php _e('Select order', 'scroll-post-excerpt'); ?></label>
 		<select name="spe_select_order" id="spe_select_order">
 			<option value='ASC' <?php if($spe_select_order == 'ASC') { echo 'selected' ; } ?>>ASC</option>
 			<option value='DESC' <?php if($spe_select_order == 'DESC') { echo 'selected' ; } ?>>DESC</option>
 		</select>
-		<p>Select display order from the list</p>
+		<p><?php _e('Select display order from the list', 'scroll-post-excerpt'); ?></p>
 		
-		<label for="tag-image">Excerpt length</label>
+		<label for="tag-image"><?php _e('Excerpt length', 'scroll-post-excerpt'); ?></label>
 		<input name="spe_excerpt_length" type="text" id="spe_excerpt_length" value="<?php echo $spe_excerpt_length; ?>" maxlength="3" />
-		<p>Only Number, Example: 200</p>
+		<p><?php _e('Only Number', 'scroll-post-excerpt'); ?> (Example: 200)</p>
 		
 		<div style="height:5px;"></div>	
 		<input type="hidden" name="spe_form_submit" value="yes"/>
@@ -96,5 +96,6 @@
 	</form>
   </div>
   <div style="height:5px;"></div>
-  <p class="description">Check official website for more information <a target="_blank" href="http://www.gopiplus.com/work/2011/09/13/vertical-scroll-post-excerpt-wordpress-plugin/">click here</a></p>
+  <p class="description"><?php _e('Check official website for more information', 'scroll-post-excerpt'); ?> 
+  <a target="_blank" href="http://www.gopiplus.com/work/2011/09/13/vertical-scroll-post-excerpt-wordpress-plugin/"><?php _e('click here', 'scroll-post-excerpt'); ?></a></p>
 </div>

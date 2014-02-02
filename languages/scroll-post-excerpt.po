@@ -1,0 +1,103 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Scroll post excerpt\n"
+"POT-Creation-Date: 2014-02-02 01:01+0800\n"
+"PO-Revision-Date: 2014-02-02 01:01+0800\n"
+"Last-Translator: \n"
+"Language-Team: www.gopiplus.com <www.gopiplus.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../scroll-post-excerpt.php:142 ../scroll-post-excerpt.php:165
+#: ../scroll-post-excerpt.php:177 ../scroll-post-excerpt.php:182
+#: ../scroll-post-setting.php:5
+msgid "Scroll post excerpt"
+msgstr ""
+
+#: ../scroll-post-excerpt.php:144 ../scroll-post-setting.php:99
+msgid "Check official website for more information"
+msgstr ""
+
+#: ../scroll-post-excerpt.php:145 ../scroll-post-setting.php:100
+msgid "click here"
+msgstr ""
+
+#: ../scroll-post-setting.php:41
+msgid "Details successfully updated."
+msgstr ""
+
+#: ../scroll-post-setting.php:46
+msgid "Scroll Setting"
+msgstr ""
+
+#: ../scroll-post-setting.php:49
+msgid "Widget title"
+msgstr ""
+
+#: ../scroll-post-setting.php:51
+msgid "Enter widget title"
+msgstr ""
+
+#: ../scroll-post-setting.php:53
+msgid "Enter height of each post"
+msgstr ""
+
+#: ../scroll-post-setting.php:55
+msgid ""
+"If any overlap in the reel at front end, you should arrange (increase/"
+"decrease) this height. (Only number)"
+msgstr ""
+
+#: ../scroll-post-setting.php:57
+msgid "Display number of post"
+msgstr ""
+
+#: ../scroll-post-setting.php:59
+msgid ""
+"Enter number of post at the same time in scroll to display. (Only number)"
+msgstr ""
+
+#: ../scroll-post-setting.php:61
+msgid "Enter max number of post to scroll"
+msgstr ""
+
+#: ../scroll-post-setting.php:63
+msgid "Enter max number of post to scroll. (Only number)"
+msgstr ""
+
+#: ../scroll-post-setting.php:65
+msgid "Enter categories"
+msgstr ""
+
+#: ../scroll-post-setting.php:67
+msgid "Category IDs, separated by commas."
+msgstr ""
+
+#: ../scroll-post-setting.php:69
+msgid "Select orderbys"
+msgstr ""
+
+#: ../scroll-post-setting.php:79
+msgid "Select orderbys from the list"
+msgstr ""
+
+#: ../scroll-post-setting.php:81
+msgid "Select order"
+msgstr ""
+
+#: ../scroll-post-setting.php:86
+msgid "Select display order from the list"
+msgstr ""
+
+#: ../scroll-post-setting.php:88
+msgid "Excerpt length"
+msgstr ""
+
+#: ../scroll-post-setting.php:90
+msgid "Only Number"
+msgstr ""

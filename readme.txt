@@ -5,8 +5,8 @@ Author URI: http://www.gopiplus.com/work/2011/09/13/vertical-scroll-post-excerpt
 Plugin URI: http://www.gopiplus.com/work/2011/09/13/vertical-scroll-post-excerpt-wordpress-plugin/
 Tags: scroll, post, excerpt
 Requires at least: 3.2
-Tested up to: 3.6
-Stable tag: 6.0
+Tested up to: 3.8
+Stable tag: 6.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	
@@ -66,7 +66,9 @@ Q3. Why only few characters display in scroll excerpt?
 
 == Screenshots ==
 
-1. Front end http://www.gopiplus.com/work/2011/09/13/vertical-scroll-post-excerpt-wordpress-plugin/
+1. Front Screen. http://www.gopiplus.com/work/2011/09/13/vertical-scroll-post-excerpt-wordpress-plugin/
+
+2. Admin Screen http://www.gopiplus.com/work/2011/09/13/vertical-scroll-post-excerpt-wordpress-plugin/
 
 == Changelog ==
 
@@ -99,6 +101,12 @@ Tested up to 3.5
 Tested up to 3.6
 Added few security features.
 
+= 6.1 =
+
+1. Tested up to 3.8
+2. Now this plugin supports localization (or internationalization). i.e. option to translate into other languages. 
+Plugin *.po file (scroll-post-excerpt.po) available in the languages folder.
+
 == Upgrade Notice ==
 
 = 1.0 =				
@@ -129,3 +137,9 @@ Tested up to 3.5
 
 Tested up to 3.6
 Added few security features.
+
+= 6.1 =
+
+1. Tested up to 3.8
+2. Now this plugin supports localization (or internationalization). i.e. option to translate into other languages. 
+Plugin *.po file (scroll-post-excerpt.po) available in the languages folder.
