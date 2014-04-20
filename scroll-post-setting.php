@@ -1,3 +1,4 @@
+<?php if(preg_match('#' . basename(__FILE__) . '#', $_SERVER['PHP_SELF'])) { die('You are not allowed to call this page directly.'); } ?>
 <div class="wrap">
   <div class="form-wrap">
     <div id="icon-edit" class="icon32 icon32-posts-post"><br>

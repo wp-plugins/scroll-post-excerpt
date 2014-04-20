@@ -2,14 +2,16 @@
 /*
 Plugin Name: Scroll post excerpt
 Description: Scroll post excerpt WordPress plugin create the information reel in the website, this scroller contain the post title and post excerpt. it is scroll like reel.
-Author: Gopi.R
-Version: 6.1
+Author: Gopi Ramasamy
+Version: 6.2
 Plugin URI: http://www.gopiplus.com/work/2011/09/13/vertical-scroll-post-excerpt-wordpress-plugin/
 Author URI: http://www.gopiplus.com/work/2011/09/13/vertical-scroll-post-excerpt-wordpress-plugin/
 Donate link: http://www.gopiplus.com/work/2011/09/13/vertical-scroll-post-excerpt-wordpress-plugin/
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
+
+if(preg_match('#' . basename(__FILE__) . '#', $_SERVER['PHP_SELF'])) { die('You are not allowed to call this page directly.'); }
 
 global $wpdb, $wp_version;
 
@@ -51,12 +53,12 @@ function spe_show()
 		foreach ( $spe_data as $spe_data ) 
 		{
 			$spe_post_title = trim($spe_data->post_title);
-			$spe_post_title = mysql_real_escape_string($spe_post_title);
+			$spe_post_title = esc_sql($spe_post_title);
 			
 			$get_permalink = get_permalink($spe_data->ID);
 
-			$spe_dp_clean =  spe_dp_clean($spe_data->post_content, @$spe_excerpt_length);
-			$spe_dp_clean = mysql_real_escape_string($spe_dp_clean);
+			$spe_dp_clean =  spe_dp_clean($spe_data->post_content, $spe_excerpt_length);
+			$spe_dp_clean = esc_sql($spe_dp_clean);
 
 			$dis_height = $dis_num_height."px";
 			$spe_html = $spe_html . "<div class='spe_div' style='height:$dis_height;padding:2px 0px 2px 0px;'>"; 
@@ -133,7 +135,7 @@ function spe_install()
 	add_option('spe_select_categories', "");
 	add_option('spe_select_orderby', "ID");
 	add_option('spe_select_order', "DESC");
-	add_option('spe_excerpt_length', "180");
+	add_option('spe_excerpt_length', "110");
 }
 
 function spe_control() 
