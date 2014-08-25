@@ -5,8 +5,8 @@ Author URI: http://www.gopiplus.com/work/2011/09/13/vertical-scroll-post-excerpt
 Plugin URI: http://www.gopiplus.com/work/2011/09/13/vertical-scroll-post-excerpt-wordpress-plugin/
 Tags: scroll, post, excerpt
 Requires at least: 3.2
-Tested up to: 3.9
-Stable tag: 6.2
+Tested up to: 4.0
+Stable tag: 6.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	
@@ -33,25 +33,16 @@ We can configure this plug-in in two different way.
 
 For more information check this link : http://www.gopiplus.com/work/2011/09/13/vertical-scroll-post-excerpt-wordpress-plugin/
 
-**1. Drag and drop the widget!**		
-**2. Copy and past the mentioned code to your desired template location.**		
+*   Drag and drop the widget.	
+*   Copy and past the mentioned code to your desired template location.		
 
 http://www.gopiplus.com/work/2011/09/13/vertical-scroll-post-excerpt-wordpress-plugin/
 
-See the live demo!	
-
-[Demo](http://www.gopiplus.com/work/2011/09/13/vertical-scroll-post-excerpt-wordpress-plugin/)		
-[To see my more plugin](http://www.gopiplus.com/work/plugin-list/)		
-
-Tags: scroll, post, excerpt
-
 == Installation ==
 
-**Installation Instruction & Configuration**  
-
-[Installation Instruction](http://www.gopiplus.com/work/2011/09/13/vertical-scroll-post-excerpt-wordpress-plugin/)								
+[Installation Instruction](http://www.gopiplus.com/work/2011/09/13/vertical-scroll-post-excerpt-wordpress-plugin/)
+						
 [Configuration](http://www.gopiplus.com/work/2011/09/13/vertical-scroll-post-excerpt-wordpress-plugin/)											
-[Live demo](http://www.gopiplus.com/work/2011/09/13/vertical-scroll-post-excerpt-wordpress-plugin/)									
 
 == Frequently Asked Questions ==
 
@@ -62,7 +53,6 @@ Q2. How many number of recent posts title will display at same time?
 Q3. Why only few characters display in scroll excerpt?		
 	
 [Answer page](http://www.gopiplus.com/work/2011/09/13/vertical-scroll-post-excerpt-wordpress-plugin/)			
-[Contact](http://www.gopiplus.com/work/2011/09/13/vertical-scroll-post-excerpt-wordpress-plugin/)	
 
 == Screenshots ==
 
@@ -111,6 +101,10 @@ Plugin *.po file (scroll-post-excerpt.po) available in the languages folder.
 
 1. Tested up to 3.9
 
+= 6.3 =
+
+1. Tested up to 4.0
+
 == Upgrade Notice ==
 
 = 1.0 =				
@@ -151,3 +145,7 @@ Plugin *.po file (scroll-post-excerpt.po) available in the languages folder.
 = 6.2 =
 
 1. Tested up to 3.9
+
+= 6.3 =
+
+1. Tested up to 4.0
