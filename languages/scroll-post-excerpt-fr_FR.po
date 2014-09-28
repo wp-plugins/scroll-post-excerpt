@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Scroll post excerpt\n"
-"POT-Creation-Date: 2014-08-08 23:20+0800\n"
-"PO-Revision-Date: 2014-08-08 23:20+0800\n"
+"POT-Creation-Date: 2014-09-28 14:55+0800\n"
+"PO-Revision-Date: 2014-09-28 14:55+0800\n"
 "Last-Translator: \n"
 "Language-Team: www.gopiplus.com <www.gopiplus.com>\n"
 "Language: fr_FR\n"
@@ -14,95 +14,123 @@ msgstr ""
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../scroll-post-excerpt.php:144 ../scroll-post-excerpt.php:167
-#: ../scroll-post-excerpt.php:179 ../scroll-post-excerpt.php:184
+#: ../scroll-post-excerpt.php:153 ../scroll-post-excerpt.php:176
+#: ../scroll-post-excerpt.php:188 ../scroll-post-excerpt.php:193
 #: ../scroll-post-setting.php:6
 msgid "Scroll post excerpt"
 msgstr "Scroll Post Excerpt (Défileur d'extraits)"
 
-#: ../scroll-post-excerpt.php:146 ../scroll-post-setting.php:100
+#: ../scroll-post-excerpt.php:155 ../scroll-post-setting.php:118
 msgid "Check official website for more information"
 msgstr "Visitez le site officiel pour plus d'informations"
 
-#: ../scroll-post-excerpt.php:147 ../scroll-post-setting.php:101
+#: ../scroll-post-excerpt.php:156 ../scroll-post-setting.php:119
 msgid "click here"
 msgstr "cliquer ici"
 
-#: ../scroll-post-setting.php:42
+#: ../scroll-post-setting.php:50
 msgid "Details successfully updated."
 msgstr "Mise à jour réussie."
 
-#: ../scroll-post-setting.php:47
+#: ../scroll-post-setting.php:55
 msgid "Scroll Setting"
 msgstr "Paramètres du Défileur"
 
-#: ../scroll-post-setting.php:50
+#: ../scroll-post-setting.php:58
 msgid "Widget title"
 msgstr "Titre du widget"
 
-#: ../scroll-post-setting.php:52
+#: ../scroll-post-setting.php:60
 msgid "Enter widget title"
 msgstr "Entrer le titre du Widget"
 
-#: ../scroll-post-setting.php:54
+#: ../scroll-post-setting.php:62
 msgid "Enter height of each post"
 msgstr "Entrer la hauteur de chaque article"
 
-#: ../scroll-post-setting.php:56
+#: ../scroll-post-setting.php:64
 msgid ""
 "If any overlap in the reel at front end, you should arrange (increase/"
 "decrease) this height. (Only number)"
 msgstr ""
 "En cas de chevauchement, augmenter/diminuer la hauteur. (Chiffres uniquement)"
 
-#: ../scroll-post-setting.php:58
+#: ../scroll-post-setting.php:66
 msgid "Display number of post"
 msgstr "Afficher le nombre d'articles"
 
-#: ../scroll-post-setting.php:60
+#: ../scroll-post-setting.php:68
 msgid ""
 "Enter number of post at the same time in scroll to display. (Only number)"
 msgstr ""
 "Entrer le nombre d'articles à afficher simultanement dans le Défileur. "
 "(Chiffres uniquement)"
 
-#: ../scroll-post-setting.php:62
+#: ../scroll-post-setting.php:70
 msgid "Enter max number of post to scroll"
 msgstr "Entrer le nombre maximum d'articles à faire défiler"
 
-#: ../scroll-post-setting.php:64
+#: ../scroll-post-setting.php:72
 msgid "Enter max number of post to scroll. (Only number)"
 msgstr ""
 "Entrer le nombre maximum d'articles à faire défiler. (Chiffres uniquement)"
 
-#: ../scroll-post-setting.php:66
+#: ../scroll-post-setting.php:74
 msgid "Enter categories"
 msgstr "Entrer les catégories"
 
-#: ../scroll-post-setting.php:68
+#: ../scroll-post-setting.php:76
 msgid "Category IDs, separated by commas."
 msgstr "ID des catégories, séparés par une virgule."
 
-#: ../scroll-post-setting.php:70
+#: ../scroll-post-setting.php:78
 msgid "Select orderbys"
 msgstr "Sélectionner l'ordre de tri"
 
-#: ../scroll-post-setting.php:80
+#: ../scroll-post-setting.php:88
 msgid "Select orderbys from the list"
 msgstr "Sélectionner l'ordre de tri depuis la liste"
 
-#: ../scroll-post-setting.php:82
+#: ../scroll-post-setting.php:90
 msgid "Select order"
 msgstr "Sélectionner l'ordre"
 
-#: ../scroll-post-setting.php:87
+#: ../scroll-post-setting.php:95
 msgid "Select display order from the list"
 msgstr "Sélectionner l'ordre d'affichage depuis la liste"
 
-#: ../scroll-post-setting.php:89
+#: ../scroll-post-setting.php:97
 msgid "Excerpt length"
 msgstr "Longeur de l'extrait (excerpt)"
 
-#: ../scroll-post-setting.php:91
+#: ../scroll-post-setting.php:99
 msgid "Only Number"
 msgstr "Chiffres uniquement"
+
+#: ../scroll-post-setting.php:101
+msgid "Scrolling speed"
+msgstr ""
+
+#: ../scroll-post-setting.php:102
+msgid "Slow"
+msgstr ""
+
+#: ../scroll-post-setting.php:104
+msgid "Fast"
+msgstr ""
+
+#: ../scroll-post-setting.php:105
+msgid "Select how fast you want the to scroll the items."
+msgstr ""
+
+#: ../scroll-post-setting.php:107
+msgid "Seconds to wait"
+msgstr ""
+
+#: ../scroll-post-setting.php:109
+msgid "How many seconds you want the wait to scroll"
+msgstr ""
+
+#: ../scroll-post-setting.php:109
+msgid "Example"
+msgstr ""

@@ -31,7 +31,9 @@ function spe_scroll() {
 			}
 		}
 	} else {
-		setTimeout("spe_scroll();", 10);
+		/* Speed values: 10 slow, 50 fast */
+		var speed = 60 - ( spe_speed * 10 );
+		setTimeout("spe_scroll();", speed);
 	}
 }
 
@@ -65,5 +67,5 @@ function spe_content() {
 	spe_numScrolls 	= spe_array.length;
 	spe_obj.scrollTop 	= '0';
 	// start scrolling
-	setTimeout("spe_scroll();", 2000);
+	setTimeout("spe_scroll();", spe_waitseconds * 2000);
 }

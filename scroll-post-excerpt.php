@@ -3,7 +3,7 @@
 Plugin Name: Scroll post excerpt
 Description: Scroll post excerpt WordPress plugin create the information reel in the website, this scroller contain the post title and post excerpt. it is scroll like reel.
 Author: Gopi Ramasamy
-Version: 6.3
+Version: 6.4
 Plugin URI: http://www.gopiplus.com/work/2011/09/13/vertical-scroll-post-excerpt-wordpress-plugin/
 Author URI: http://www.gopiplus.com/work/2011/09/13/vertical-scroll-post-excerpt-wordpress-plugin/
 Donate link: http://www.gopiplus.com/work/2011/09/13/vertical-scroll-post-excerpt-wordpress-plugin/
@@ -27,6 +27,11 @@ function spe_show()
 	$spe_select_orderby = get_option('spe_select_orderby');
 	$spe_select_order = get_option('spe_select_order');
 	$spe_excerpt_length = get_option('spe_excerpt_length');
+	
+	$spe_speed = get_option('spe_speed');
+	if(!is_numeric($spe_speed)) { $spe_speed = 2; }
+	$spe_waitseconds = get_option('spe_waitseconds');
+	if(!is_numeric($spe_waitseconds)) { $spe_waitseconds = 2; }
 	
 	if(!is_numeric($num_user))
 	{
@@ -95,6 +100,8 @@ function spe_show()
 		var spe_numScrolls	= '';
 		var spe_heightOfElm = '<?php echo $dis_num_height; ?>';
 		var spe_numberOfElm = '<?php echo $spe_count; ?>';
+		var spe_speed = '<?php echo $spe_speed; ?>';
+		var spe_waitseconds = '<?php echo $spe_waitseconds; ?>';
 		var spe_scrollOn 	= 'true';
 		function spe_createscroll() 
 		{
@@ -131,11 +138,13 @@ function spe_install()
 	add_option('spe_title', "Scroll post excerpt");
 	add_option('spe_select_num_user', "10");
 	add_option('spe_dis_num_user', "5");
-	add_option('spe_dis_num_height', "80");
+	add_option('spe_dis_num_height', "100");
 	add_option('spe_select_categories', "");
 	add_option('spe_select_orderby', "ID");
 	add_option('spe_select_order', "DESC");
 	add_option('spe_excerpt_length', "110");
+	add_option('spe_speed', 2 );
+    add_option('spe_waitseconds', 2 );
 }
 
 function spe_control() 
