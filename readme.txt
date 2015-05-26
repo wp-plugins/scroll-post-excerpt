@@ -5,8 +5,8 @@ Author URI: http://www.gopiplus.com/work/2011/09/13/vertical-scroll-post-excerpt
 Plugin URI: http://www.gopiplus.com/work/2011/09/13/vertical-scroll-post-excerpt-wordpress-plugin/
 Tags: scroll, post, excerpt
 Requires at least: 3.2
-Tested up to: 4.1
-Stable tag: 6.5
+Tested up to: 4.2.2
+Stable tag: 6.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	
@@ -113,6 +113,10 @@ Plugin *.po file (scroll-post-excerpt.po) available in the languages folder.
 
 1. Tested up to 4.1
 
+= 6.6 =
+
+1. Tested up to 4.2.2
+
 == Upgrade Notice ==
 
 = 1.0 =				
@@ -165,3 +169,7 @@ Plugin *.po file (scroll-post-excerpt.po) available in the languages folder.
 = 6.5 =
 
 1. Tested up to 4.1
+
+= 6.6 =
+
+1. Tested up to 4.2.2
