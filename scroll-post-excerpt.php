@@ -128,7 +128,7 @@ function spe_dp_clean($excerpt, $substr=0)
 	$string = strip_tags(str_replace('[...]', '...', $excerpt));
 	if ($substr>0) 
 	{
-		$string = substr($string, 0, $substr);
+		$string = strip_shortcodes(mb_substr($string, 0, $substr));
 	}
 	return $string;
 }
